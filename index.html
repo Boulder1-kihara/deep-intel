@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep intel</title>
+    <style>
+        body{
+            font-family: 'arial', sans-serif;
+            text-align: center;
+            background-color: rgb(38, 49, 75);
+            font-size:x-large;
+            padding: 10px;
+        }
+        #nav-bar{
+            justify-content: space-between;
+            height: 60px;
+            padding: 0 40px;
+            align-items: center;
+            background-color: #0047AB;
+            color: white;
+            display: flex;
+        }
+        #nav-bar a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+        #nav-bar a:hover{
+            color: #FFd700;
+        }
+        #home{
+            padding-top: 80px;
+        }
+        #home-title{
+            font-size: 64px;
+            color: white;
+            font-weight: bold;
+            padding-bottom: 50px;
+        }
+        #p-home{
+            color: #aeafb1;
+            padding-bottom: 50px;
+        }
+        #home-buttons{
+            padding-bottom: 50px;
+        }
+        #explore{
+            color: white;
+            background-color: #0047AB;
+            border: none;
+            height: 40px;
+            width: 30%;
+            border-radius: 20px;
+            font-size: large;
+            cursor: pointer;
+        }
+        #explore:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        #learn{
+            color: rgb(26, 24, 24);
+            background-color: #6f7172;
+            border: none;
+            height: 40px;
+            width: 30%;
+            border-radius: 20px;
+            font-size: large;
+            cursor: pointer;
+        }
+        #learn:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        #features, #cases{
+            margin-top: 15%;
+        }
+        #features-description, #cases-description{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        #features-title, #cases-title{
+            padding-bottom: 50px;
+            color: white;
+            font-size: xx-large;
+            font-weight: bolder;
+        }
+        #performance, #integration, #scalability, #cloud, #analysis{
+            background-color: #6f7172;
+            width: 30%;
+            padding: 20px;
+            height: 70%;
+            border-radius: 20px;
+            padding: 20px;
+            color: #aeafb1;
+            transition: transform 0.3s ease;
+        }
+        #performance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title{
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+        #performance:hover, #integration:hover, #scalability:hover, #cloud:hover, #analysis:hover{
+            transform: scale(1.1);
+        }
+        #Contact{
+            margin-top: 30%;
+            background-color: #6f7172;
+            padding: 20px;
+            border-radius: 20px;
+            padding: 20px;
+            color: #aeafb1;
+        }
+        #Contact:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        #contacts-title{
+            font-size: larger;
+            font-weight: bold;
+            color: white;
+        }
+        #contact-button{
+            margin-top: 5%;
+            color: white;
+            background-color: #0047AB;
+            border: none;
+            height: 40px;
+            width: 30%;
+            border-radius: 20px;
+            font-size: large;
+            cursor: pointer;
+        }
+        #contact-button:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        footer {
+    background-color: #0047AB;
+    color: white;
+    padding: 40px 20px;
+    margin-top: 50px; /* Adds space between the last section and the footer */
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6f7172; /* A subtle line to separate content from copyright */
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px; /* Ensures sections don't get too narrow */
+    margin: 10px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #FFd700;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 0.9rem;
+}
+#coming{
+    width: 100%;
+    border-radius: 20px;
+    height: 30px;
+    background-color: #0047AB;
+    color: white;
+}
+#coming:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+}
+    </style>
+</head>
+<body>
+    <section id="nav-bar">
+        <section id="title">Deep Intel</section>
+        <a href="#features">Features</a>
+        <a href="#cases">Use Cases</a>
+        <a href="#Contact">Contact</a>
+    </section>
+
+    <section id="home">
+        <section id="home-title">The Power Of Deep Intel For Your Business</section>
+        <p id="p-home">Transform your data with cutting edge AI. Alpha's Deep Intel branch provides intelligent solutions to optimize performance, enhance user expiriences and drive innovation.</p>
+        <section id="home-buttons">
+            <button id="explore">Explore Solutions</button>
+            <button id="learn">Learn More</button>
+        </section>
+    </section>
+
+    <section id="features">
+        <section id="features-title">Key Featutes</section>
+        
+        <section id="features-description">
+            <section id="performance">
+            <section id="performance-title">High-Performance AI</section>
+            <section id="performance-text">Our models are engineered for speed and efficiency, prpoviding real-time insights for your applications.</section>
+        </section>
+
+        <section id="integration">
+            <section id="integration-title">Seamless Integration</section>
+            <section id="integration-text">Easily integrate Deep Intel into your existing systems with our well documented APIs.</section>
+        </section>
+
+        <section id="scalability">
+            <section id="scalability-title">Scalable Solutions</section>
+            <section id="scalability-text">Whether you are a small startup or a large enterprise, our AI adapts to your needs.</section>
+        </section>
+        </section>
+
+    </section>
+
+    <section id="cases">
+        <section id="cases-title">Use Cases</section>
+
+        <section id="cases-description">
+            <section id="cloud">
+            <section id="cloud-title">Cloud Gaming Optimization</section>
+            <section id="cloud-text">Deep Intel's algorithms developed by Alpha's AI branch, analyze network conditions and player behavior to optimize game latency and providing a seamless gaming expirience on any device regardless of it's hardware</section>
+            <section id="coming">COMING SOON</section>
+        </section>
+
+        <section id="analysis">
+            <section id="analysis-title">Predictive Analysis</section>
+            <section id="analysis-text">Our AI can analyze vast datasets to predict market trends, customer behavior, and potential system failures. Gain a competitive edge by making data-driven decisions.
+
+ </section>
+        </section>
+        </section>
+
+    </section>
+
+    <section id="Contact">
+        <section id="contacts-title">Ready to Harness the Power of AI?</section>
+        <section id="contacts-text">
+            Connect with our team to discuss how Deep Intel can transform your Business
+        </section>
+        <button id="contact-button">Request a Demo</buttonn>
+    </section>
+
+    <footer>
+    <section class="footer-content">
+        <section class="footer-section">
+            <h4>Deep Intel</h4>
+            <p>Providing intelligent solutions to drive innovation and enhance user experiences.</p>
+        </section>
+        <section class="footer-section">
+            <h4>Contact Us</h4>
+            <p>Email: contact@deepintel.com</p>
+            <p>Phone: +254 708692989</p>
+        </section>
+        <section class="footer-section">
+            <h4>Follow Us</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+        </section>
+    </section>
+    <section class="footer-bottom">
+        <p>&copy; 2025 Deep Intel. All Rights Reserved.</p>
+    </section>
+</footer>
+</body>
+</html>
