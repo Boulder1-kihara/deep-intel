@@ -9,191 +9,258 @@
             font-family: 'arial', sans-serif;
             text-align: center;
             background-color: rgb(38, 49, 75);
-            font-size:x-large;
-            padding: 10px;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            padding: 2vw;
+            margin: 0;
+            box-sizing: border-box;
         }
         #nav-bar{
             justify-content: space-between;
-            height: 60px;
-            padding: 0 40px;
+            height: auto;
+            padding: 1rem 5%;
             align-items: center;
             background-color: #0047AB;
             color: white;
             display: flex;
+            flex-wrap: wrap;
         }
         #nav-bar a{
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            margin: 0.5rem, 1rem;
             transition: color 0.3s ease;
         }
         #nav-bar a:hover{
             color: #FFd700;
         }
         #home{
-            padding-top: 80px;
+            padding-top: 5rem;
         }
         #home-title{
-            font-size: 64px;
+            font-size: clamp(2rem, 8vw, 4rem);
             color: white;
             font-weight: bold;
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
         }
         #p-home{
             color: #aeafb1;
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 90%;
+            margin: 0 auto;
         }
         #home-buttons{
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
         }
         #explore{
             color: white;
             background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
         #explore:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         #learn{
-            color: rgb(26, 24, 24);
-            background-color: #6f7172;
+            color: white;
+            background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
+            background-color: #6f7172;
+            color: rgb(26, 24, 24);
         }
+         @media (hover: none) {
+        #explore:hover, #learn:hover, #performance:hover, #integration:hover, 
+        #scalability:hover, #cloud:hover, #analysis:hover, #contact-button:hover, 
+        #coming:hover {
+            transform: none; /* Disable scale on touch devices */
+        }
+    }
         #learn:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         #features, #cases{
-            margin-top: 15%;
+            margin-top: 10%;
         }
         #features-description, #cases-description{
             display: flex;
-            gap: 20px;
+            gap: 2%;
             justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 2%;
         }
         #features-title, #cases-title{
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
             color: white;
-            font-size: xx-large;
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
             font-weight: bolder;
         }
         #performance, #integration, #scalability, #cloud, #analysis{
             background-color: #6f7172;
-            width: 30%;
-            padding: 20px;
-            height: 70%;
+            width: clamp(250px, 30%, 400px);
+            padding: 2%;
             border-radius: 20px;
-            padding: 20px;
             color: #aeafb1;
             transition: transform 0.3s ease;
+            margin-bottom: 2%;
         }
         #performance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title{
             color: white;
-            font-size: large;
+            font-size: clamp(1rem, 3vw, 1.2rem);
             font-weight: bold;
         }
         #performance:hover, #integration:hover, #scalability:hover, #cloud:hover, #analysis:hover{
             transform: scale(1.1);
         }
         #Contact{
-            margin-top: 30%;
+            margin: 10% auto;
             background-color: #6f7172;
-            padding: 20px;
+            padding: 2%;
             border-radius: 20px;
-            padding: 20px;
             color: #aeafb1;
+            max-width: 90%;
+            transition: transform 0.3s ease;
         }
         #Contact:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         #contacts-title{
-            font-size: larger;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
             font-weight: bold;
             color: white;
         }
         #contact-button{
-            margin-top: 5%;
+            margin-top: 3%;
             color: white;
             background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
         #contact-button:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         footer {
-    background-color: #0047AB;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 50px; /* Adds space between the last section and the footer */
-    text-align: center;
+            background-color: #0047AB;
+            color: white;
+            padding: 2rem 5%;
+            margin-top: 5rem;
+            text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #6f7172; /* A subtle line to separate content from copyright */
-}
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #6f7172; 
+        }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px; /* Ensures sections don't get too narrow */
-    margin: 10px;
-}
+        .footer-section {
+            flex: 1;
+            min-width: 200px; 
+            margin: 10px;
+        }
 
-.footer-section h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
 
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
 
-.footer-section a:hover {
-    color: #FFd700;
-}
+        .footer-section a:hover {
+            color: #FFd700;
+        }
 
-.footer-bottom {
-    padding-top: 20px;
-}
+        .footer-bottom {
+            padding-top: 20px;
+        }
 
-.footer-bottom p {
-    font-size: 0.9rem;
-}
-#coming{
-    width: 100%;
-    border-radius: 20px;
-    height: 30px;
-    background-color: #0047AB;
-    color: white;
-}
-#coming:hover{
+        .footer-bottom p {
+            font-size: 0.9rem;
+        }
+        #coming{
+            width: 100%;
+            border-radius: 20px;
+            height: 2rem;
+            background-color: #0047AB;
+            color: white;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            transition: transform 0.3s ease;
+            }
+        #coming:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
-}
+        }
+        @media (max-width: 768px) {
+            #nav-bar{
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            #home-title{
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+            }
+            #p-home{
+                font-size: clamp(0.9rem, 2.5vw, 1rem);
+            }
+            #features-description, #cases-description{
+                flex-direction: column;
+                align-items: center;
+            }
+            #performance, #integration, #scalability, #cloud, #analysis {
+                width: 90%;
+            }
+             #Contact {
+                width: 90%;
+            }
+        }
+        @media (max-width: 480px) {
+            #nav-bar a {
+                font-size: clamp(0.8rem, 2vw, 0.9rem);
+                margin: 0.3rem;
+            }
+
+            #home-title {
+                font-size: clamp(1.2rem, 5vw, 2rem);
+            }
+
+            #explore, #learn, #contact-button {
+                width: 80%;
+            }
+            #features-title, #cases-title {
+                font-size: clamp(1.2rem, 4vw, 1.8rem);
+            }
+    }
     </style>
 </head>
 <body>
