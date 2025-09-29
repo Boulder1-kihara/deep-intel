@@ -28,7 +28,7 @@
             color: white;
             text-decoration: none;
             font-size: clamp(0.9rem, 2vw, 1rem);
-            margin: 0.5rem, 1rem;
+            margin: 0.5rem 1rem;
             transition: color 0.3s ease;
         }
         #nav-bar a:hover{
@@ -87,12 +87,17 @@
         }
          @media (hover: none) {
         #explore:hover, #learn:hover, #performance:hover, #integration:hover, 
-        #scalability:hover, #cloud:hover, #analysis:hover, #contact-button:hover, 
-        #coming:hover {
-            transform: none; /* Disable scale on touch devices */
+            #scalability:hover, #cloud:hover, #analysis:hover, #contact-button:hover, 
+            #coming:hover, #hyper:hover, #i24-7:hover, #sentiment:hover, #sales:hover, 
+            #lead:hover, #optimize:hover, #content:hover, #maintenance:hover {
+            transform: none; 
         }
     }
         #learn:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        #hyper:hover, #i24-7:hover, #sentiment:hover, #sales:hover, #lead:hover, #optimize:hover, #content:hover, #machine:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
@@ -112,7 +117,7 @@
             font-size: clamp(1.5rem, 5vw, 2.5rem);
             font-weight: bolder;
         }
-        #performance, #integration, #scalability, #cloud, #analysis{
+        #performance, #integration, #scalability, #cloud, #analysis, #hyper, #i24-7, #sentiment, #sales, #lead, #optimize, #content, #maintenance{
             background-color: #6f7172;
             width: clamp(250px, 30%, 400px);
             padding: 2%;
@@ -121,13 +126,19 @@
             transition: transform 0.3s ease;
             margin-bottom: 2%;
         }
-        #performance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title{
+        #performance-title, #hyper-title, #i24-7-title, #sentiment-title, #sales-title, #optimize-title, #content-title, #maintenance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title, #lead-title{
             color: white;
             font-size: clamp(1rem, 3vw, 1.2rem);
             font-weight: bold;
         }
         #performance:hover, #integration:hover, #scalability:hover, #cloud:hover, #analysis:hover{
             transform: scale(1.1);
+        }
+        #productivity-section, #profitability-section, #customer-expirience{
+            color: white;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 900;
+            padding-bottom: 2rem;
         }
         #Contact{
             margin: 10% auto;
@@ -237,11 +248,16 @@
                 flex-direction: column;
                 align-items: center;
             }
-            #performance, #integration, #scalability, #cloud, #analysis {
+            #performance, #integration, #scalability, #cloud, #analysis, #hyper, 
+            #i24-7, #sentiment, #sales, #lead, #optimize, #content, #maintenance{
                 width: 90%;
             }
              #Contact {
                 width: 90%;
+            }
+            #productivity-section, #profitability-section, #customer-experience {
+                font-size: clamp(1rem, 3.5vw, 1.5rem);
+                padding-bottom: 1.5rem;
             }
         }
         @media (max-width: 480px) {
@@ -281,12 +297,12 @@
     </section>
 
     <section id="features">
-        <section id="features-title">Key Featutes</section>
+        <section id="features-title">Key Features</section>
         
         <section id="features-description">
             <section id="performance">
             <section id="performance-title">High-Performance AI</section>
-            <section id="performance-text">Our models are engineered for speed and efficiency, prpoviding real-time insights for your applications.</section>
+            <section id="performance-text">Our models are engineered for speed and efficiency, providing real-time insights for your applications.</section>
         </section>
 
         <section id="integration">
@@ -304,22 +320,64 @@
 
     <section id="cases">
         <section id="cases-title">Use Cases</section>
+        <h2 id="productivity-section">Boost Productivity Through Automation and Efficiency</h2>
 
         <section id="cases-description">
             <section id="cloud">
-            <section id="cloud-title">Cloud Gaming Optimization</section>
-            <section id="cloud-text">Deep Intel's algorithms developed by Alpha's AI branch, analyze network conditions and player behavior to optimize game latency and providing a seamless gaming expirience on any device regardless of it's hardware</section>
-            <section id="coming">COMING SOON</section>
+                    <section id="cloud-title">Cloud Gaming Optimization</section>
+                    <section id="cloud-text">Deep Intel's algorithms developed by Alpha's AI branch, analyze network conditions and player behavior to optimize game latency and providing a seamless gaming expirience on any device regardless of it's hardware</section>
+                    <section id="coming">COMING SOON</section>
+            </section>
+
+            <section id="analysis">
+                <section id="analysis-title">Predictive Analysis</section>
+                <section id="analysis-text">Our AI can analyze vast datasets to predict market trends, customer behavior, and potential system failures. Gain a competitive edge by making data-driven decisions.
+            </section>
         </section>
 
-        <section id="analysis">
-            <section id="analysis-title">Predictive Analysis</section>
-            <section id="analysis-text">Our AI can analyze vast datasets to predict market trends, customer behavior, and potential system failures. Gain a competitive edge by making data-driven decisions.
-
- </section>
-        </section>
+        <section id="content">
+                <section id="content-title">Intelligent Content Generation</section>
+                <section id="content-text">Using generative AI models (like the ones Deep Intel likely specializes in), your solutions can draft marketing copy, generate product descriptions, summarize large documents, or create initial drafts of complex reports, accelerating time-to-market.</section>
         </section>
 
+        <section id="maintenance">
+                <section id="maintenance-title">Predictive Maintenance</section>
+                <section id="maintenance-text">For manufacturing or logistics clients, AI models can analyze sensor data from equipment to predict failures before they occur. This allows for proactive maintenance scheduling, minimizing costly unplanned downtime and maximizing operational uptime.</section>
+        </section>
+
+        <h2 id="profitability-section"> Drive Profitability Through Data-Driven Decision Making</h2>
+
+        <section id="sales">
+            <section id="sales-title">Predictive Analytics for Sales</section>
+            <section id="sales-text">AI can analyze historical sales data, market trends, and customer behavior to forecast demand with high accuracy. For retailers and manufacturers, this optimizes inventory levels, preventing both overstocking (which ties up capital) and stockouts (which lose sales).</section>
+        </section>
+
+        <section id="lead">
+            <section id="lead-title">Lead Scoring and Sales Enablement</section>
+            <section id="lead-text">In a B2B sales cycle, AI can automatically score and prioritize leads based on their likelihood to convert. This ensures sales teams focus their time and resources on the hottest prospects, leading to higher conversion rates and a faster sales cycle.</section>
+        </section>
+
+        <section id="optimize">
+            <section id="optimize-title">Optimized Pricing and Product Mix</section>
+            <section id="optimize-text">Deep Intel's AI can process real-time market conditions, competitor pricing, and customer price sensitivity to recommend the optimal price for products or services. It can also suggest the best product bundles or cross-sell/upsell opportunities to maximize the value of every customer transaction.</section>
+        </section>
+
+        <h2 id="customer-expirience">Enhance Customer Experience and Retention</h2>
+
+        <section id="hyper">
+            <section id="hyper-title">Hyper-Personalized Engagement</section>
+            <section id="hyper-text">Deep Intel can use AI to analyze customer data (purchase history, industry needs, engagement level) to create highly segmented profiles. This allows sales and marketing to deliver hyper-personalized content and messaging, increasing engagement and building greater brand loyalty.</section>
+        </section>
+
+        <section id="i24-7">
+            <section id="i24-7-title">24/7 Conversational AI</section>
+            <section id="i24-7-text">AI-powered chatbots and virtual assistants can manage customer inquiries, provide technical support, and resolve basic issues around the clock. This reduces the workload on human customer service agents, lowers operational costs, and ensures faster response times, boosting customer satisfaction.</section>
+        </section>
+
+        <section id="sentiment">
+            <section id="sentiment-title">Sentiment Analysis</section>
+            <section id="sentiment-text">AI can process large amounts of unstructured data (emails, social media, call transcripts) to gauge customer sentiment. This gives B2B companies real-time insights into product weaknesses, service gaps, and market needs, allowing them to rapidly adjust strategies and improve products before issues lead to customer churn.</section>
+        </section>
     </section>
 
     <section id="Contact">
@@ -327,7 +385,7 @@
         <section id="contacts-text">
             Connect with our team to discuss how Deep Intel can transform your Business
         </section>
-        <button id="contact-button">Request a Demo</buttonn>
+        <button id="contact-button">Request a Demo</button>
     </section>
 
     <footer>
