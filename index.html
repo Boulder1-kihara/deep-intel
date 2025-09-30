@@ -9,191 +9,274 @@
             font-family: 'arial', sans-serif;
             text-align: center;
             background-color: rgb(38, 49, 75);
-            font-size:x-large;
-            padding: 10px;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            padding: 2vw;
+            margin: 0;
+            box-sizing: border-box;
         }
         #nav-bar{
             justify-content: space-between;
-            height: 60px;
-            padding: 0 40px;
+            height: auto;
+            padding: 1rem 5%;
             align-items: center;
             background-color: #0047AB;
             color: white;
             display: flex;
+            flex-wrap: wrap;
         }
         #nav-bar a{
             color: white;
             text-decoration: none;
-            font-size: 18px;
+            font-size: clamp(0.9rem, 2vw, 1rem);
+            margin: 0.5rem 1rem;
             transition: color 0.3s ease;
         }
         #nav-bar a:hover{
             color: #FFd700;
         }
         #home{
-            padding-top: 80px;
+            padding-top: 5rem;
         }
         #home-title{
-            font-size: 64px;
+            font-size: clamp(2rem, 8vw, 4rem);
             color: white;
             font-weight: bold;
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
         }
         #p-home{
             color: #aeafb1;
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            max-width: 90%;
+            margin: 0 auto;
         }
         #home-buttons{
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
         }
         #explore{
             color: white;
             background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
         #explore:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         #learn{
-            color: rgb(26, 24, 24);
-            background-color: #6f7172;
+            color: white;
+            background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
+            background-color: #6f7172;
+            color: rgb(26, 24, 24);
         }
+         @media (hover: none) {
+        #explore:hover, #learn:hover, #performance:hover, #integration:hover, 
+            #scalability:hover, #cloud:hover, #analysis:hover, #contact-button:hover, 
+            #coming:hover, #hyper:hover, #i24-7:hover, #sentiment:hover, #sales:hover, 
+            #lead:hover, #optimize:hover, #content:hover, #maintenance:hover {
+            transform: none; 
+        }
+    }
         #learn:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
+        #hyper:hover, #i24-7:hover, #sentiment:hover, #sales:hover, #lead:hover, #optimize:hover, #content:hover, #machine:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
         #features, #cases{
-            margin-top: 15%;
+            margin-top: 10%;
         }
         #features-description, #cases-description{
             display: flex;
-            gap: 20px;
+            gap: 2%;
             justify-content: center;
+            flex-wrap: wrap;
+            padding: 0 2%;
         }
         #features-title, #cases-title{
-            padding-bottom: 50px;
+            padding-bottom: 3rem;
             color: white;
-            font-size: xx-large;
+            font-size: clamp(1.5rem, 5vw, 2.5rem);
             font-weight: bolder;
         }
-        #performance, #integration, #scalability, #cloud, #analysis{
+        #performance, #integration, #scalability, #cloud, #analysis, #hyper, #i24-7, #sentiment, #sales, #lead, #optimize, #content, #maintenance{
             background-color: #6f7172;
-            width: 30%;
-            padding: 20px;
-            height: 70%;
+            width: clamp(250px, 30%, 400px);
+            padding: 2%;
             border-radius: 20px;
-            padding: 20px;
             color: #aeafb1;
             transition: transform 0.3s ease;
+            margin-bottom: 2%;
         }
-        #performance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title{
+        #performance-title, #hyper-title, #i24-7-title, #sentiment-title, #sales-title, #optimize-title, #content-title, #maintenance-title, #integration-title, #scalability-title, #cloud-title, #analysis-title, #lead-title{
             color: white;
-            font-size: large;
+            font-size: clamp(1rem, 3vw, 1.2rem);
             font-weight: bold;
         }
         #performance:hover, #integration:hover, #scalability:hover, #cloud:hover, #analysis:hover{
             transform: scale(1.1);
         }
+        #productivity-section, #profitability-section, #customer-expirience{
+            color: white;
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 900;
+            padding-bottom: 2rem;
+        }
         #Contact{
-            margin-top: 30%;
+            margin: 10% auto;
             background-color: #6f7172;
-            padding: 20px;
+            padding: 2%;
             border-radius: 20px;
-            padding: 20px;
             color: #aeafb1;
+            max-width: 90%;
+            transition: transform 0.3s ease;
         }
         #Contact:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         #contacts-title{
-            font-size: larger;
+            font-size: clamp(1.2rem, 3vw, 1.5rem);
             font-weight: bold;
             color: white;
         }
         #contact-button{
-            margin-top: 5%;
+            margin-top: 3%;
             color: white;
             background-color: #0047AB;
             border: none;
-            height: 40px;
-            width: 30%;
+            height: 2.5rem;
+            width: clamp(150px, 40%, 250px);
             border-radius: 20px;
-            font-size: large;
+            font-size: clamp(0.9rem, 2vw, 1rem);
             cursor: pointer;
+            transition: transform 0.3s ease;
         }
         #contact-button:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
         }
         footer {
-    background-color: #0047AB;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 50px; /* Adds space between the last section and the footer */
-    text-align: center;
+            background-color: #0047AB;
+            color: white;
+            padding: 2rem 5%;
+            margin-top: 5rem;
+            text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
-    padding-bottom: 20px;
-    border-bottom: 1px solid #6f7172; /* A subtle line to separate content from copyright */
-}
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #6f7172; 
+        }
 
-.footer-section {
-    flex: 1;
-    min-width: 200px; /* Ensures sections don't get too narrow */
-    margin: 10px;
-}
+        .footer-section {
+            flex: 1;
+            min-width: 200px; 
+            margin: 10px;
+        }
 
-.footer-section h4 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
+        .footer-section h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
 
-.footer-section a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s ease;
-}
+        .footer-section a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
 
-.footer-section a:hover {
-    color: #FFd700;
-}
+        .footer-section a:hover {
+            color: #FFd700;
+        }
 
-.footer-bottom {
-    padding-top: 20px;
-}
+        .footer-bottom {
+            padding-top: 20px;
+        }
 
-.footer-bottom p {
-    font-size: 0.9rem;
-}
-#coming{
-    width: 100%;
-    border-radius: 20px;
-    height: 30px;
-    background-color: #0047AB;
-    color: white;
-}
-#coming:hover{
+        .footer-bottom p {
+            font-size: 0.9rem;
+        }
+        #coming{
+            width: 100%;
+            border-radius: 20px;
+            height: 2rem;
+            background-color: #0047AB;
+            color: white;
+            font-size: clamp(0.8rem, 2vw, 0.9rem);
+            transition: transform 0.3s ease;
+            }
+        #coming:hover{
             transform: scale(1.1);
             transition: transform 0.3s ease;
-}
+        }
+        @media (max-width: 768px) {
+            #nav-bar{
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+            #home-title{
+                font-size: clamp(1.5rem, 6vw, 2.5rem);
+            }
+            #p-home{
+                font-size: clamp(0.9rem, 2.5vw, 1rem);
+            }
+            #features-description, #cases-description{
+                flex-direction: column;
+                align-items: center;
+            }
+            #performance, #integration, #scalability, #cloud, #analysis, #hyper, 
+            #i24-7, #sentiment, #sales, #lead, #optimize, #content, #maintenance{
+                width: 90%;
+            }
+             #Contact {
+                width: 90%;
+            }
+            #productivity-section, #profitability-section, #customer-experience {
+                font-size: clamp(1rem, 3.5vw, 1.5rem);
+                padding-bottom: 1.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            #nav-bar a {
+                font-size: clamp(0.8rem, 2vw, 0.9rem);
+                margin: 0.3rem;
+            }
+
+            #home-title {
+                font-size: clamp(1.2rem, 5vw, 2rem);
+            }
+
+            #explore, #learn, #contact-button {
+                width: 80%;
+            }
+            #features-title, #cases-title {
+                font-size: clamp(1.2rem, 4vw, 1.8rem);
+            }
+    }
     </style>
 </head>
 <body>
@@ -214,12 +297,12 @@
     </section>
 
     <section id="features">
-        <section id="features-title">Key Featutes</section>
+        <section id="features-title">Key Features</section>
         
         <section id="features-description">
             <section id="performance">
             <section id="performance-title">High-Performance AI</section>
-            <section id="performance-text">Our models are engineered for speed and efficiency, prpoviding real-time insights for your applications.</section>
+            <section id="performance-text">Our models are engineered for speed and efficiency, providing real-time insights for your applications.</section>
         </section>
 
         <section id="integration">
@@ -237,22 +320,64 @@
 
     <section id="cases">
         <section id="cases-title">Use Cases</section>
+        <h2 id="productivity-section">Boost Productivity Through Automation and Efficiency</h2>
 
         <section id="cases-description">
             <section id="cloud">
-            <section id="cloud-title">Cloud Gaming Optimization</section>
-            <section id="cloud-text">Deep Intel's algorithms developed by Alpha's AI branch, analyze network conditions and player behavior to optimize game latency and providing a seamless gaming expirience on any device regardless of it's hardware</section>
-            <section id="coming">COMING SOON</section>
+                    <section id="cloud-title">Cloud Gaming Optimization</section>
+                    <section id="cloud-text">Deep Intel's algorithms developed by Alpha's AI branch, analyze network conditions and player behavior to optimize game latency and providing a seamless gaming expirience on any device regardless of it's hardware</section>
+                    <section id="coming">COMING SOON</section>
+            </section>
+
+            <section id="analysis">
+                <section id="analysis-title">Predictive Analysis</section>
+                <section id="analysis-text">Our AI can analyze vast datasets to predict market trends, customer behavior, and potential system failures. Gain a competitive edge by making data-driven decisions.
+            </section>
         </section>
 
-        <section id="analysis">
-            <section id="analysis-title">Predictive Analysis</section>
-            <section id="analysis-text">Our AI can analyze vast datasets to predict market trends, customer behavior, and potential system failures. Gain a competitive edge by making data-driven decisions.
-
- </section>
-        </section>
+        <section id="content">
+                <section id="content-title">Intelligent Content Generation</section>
+                <section id="content-text">Using generative AI models (like the ones Deep Intel likely specializes in), your solutions can draft marketing copy, generate product descriptions, summarize large documents, or create initial drafts of complex reports, accelerating time-to-market.</section>
         </section>
 
+        <section id="maintenance">
+                <section id="maintenance-title">Predictive Maintenance</section>
+                <section id="maintenance-text">For manufacturing or logistics clients, AI models can analyze sensor data from equipment to predict failures before they occur. This allows for proactive maintenance scheduling, minimizing costly unplanned downtime and maximizing operational uptime.</section>
+        </section>
+
+        <h2 id="profitability-section"> Drive Profitability Through Data-Driven Decision Making</h2>
+
+        <section id="sales">
+            <section id="sales-title">Predictive Analytics for Sales</section>
+            <section id="sales-text">AI can analyze historical sales data, market trends, and customer behavior to forecast demand with high accuracy. For retailers and manufacturers, this optimizes inventory levels, preventing both overstocking (which ties up capital) and stockouts (which lose sales).</section>
+        </section>
+
+        <section id="lead">
+            <section id="lead-title">Lead Scoring and Sales Enablement</section>
+            <section id="lead-text">In a B2B sales cycle, AI can automatically score and prioritize leads based on their likelihood to convert. This ensures sales teams focus their time and resources on the hottest prospects, leading to higher conversion rates and a faster sales cycle.</section>
+        </section>
+
+        <section id="optimize">
+            <section id="optimize-title">Optimized Pricing and Product Mix</section>
+            <section id="optimize-text">Deep Intel's AI can process real-time market conditions, competitor pricing, and customer price sensitivity to recommend the optimal price for products or services. It can also suggest the best product bundles or cross-sell/upsell opportunities to maximize the value of every customer transaction.</section>
+        </section>
+
+        <h2 id="customer-expirience">Enhance Customer Experience and Retention</h2>
+
+        <section id="hyper">
+            <section id="hyper-title">Hyper-Personalized Engagement</section>
+            <section id="hyper-text">Deep Intel can use AI to analyze customer data (purchase history, industry needs, engagement level) to create highly segmented profiles. This allows sales and marketing to deliver hyper-personalized content and messaging, increasing engagement and building greater brand loyalty.</section>
+        </section>
+
+        <section id="i24-7">
+            <section id="i24-7-title">24/7 Conversational AI</section>
+            <section id="i24-7-text">AI-powered chatbots and virtual assistants can manage customer inquiries, provide technical support, and resolve basic issues around the clock. This reduces the workload on human customer service agents, lowers operational costs, and ensures faster response times, boosting customer satisfaction.</section>
+        </section>
+
+        <section id="sentiment">
+            <section id="sentiment-title">Sentiment Analysis</section>
+            <section id="sentiment-text">AI can process large amounts of unstructured data (emails, social media, call transcripts) to gauge customer sentiment. This gives B2B companies real-time insights into product weaknesses, service gaps, and market needs, allowing them to rapidly adjust strategies and improve products before issues lead to customer churn.</section>
+        </section>
     </section>
 
     <section id="Contact">
@@ -260,7 +385,7 @@
         <section id="contacts-text">
             Connect with our team to discuss how Deep Intel can transform your Business
         </section>
-        <button id="contact-button">Request a Demo</buttonn>
+        <button id="contact-button">Request a Demo</button>
     </section>
 
     <footer>
